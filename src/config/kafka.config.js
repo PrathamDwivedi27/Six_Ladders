@@ -2,6 +2,7 @@ import { Kafka} from "kafkajs";
 import fs from "fs";
 import path from "path";
 import { KAFKA_BROKER, KAFKA_USERNAME, KAFKA_PASSWORD } from "./server-config.js";
+import logger from "../utils/logger.js";
 
 const kafka =new Kafka ({
     brokers:[KAFKA_BROKER],
@@ -22,7 +23,7 @@ export async function createProducer(){
 
     const _producer=kafka.producer();
     await _producer.connect();
-    console.log("Producer is connected");
+    logger.info("Producer is connected");
     producer=_producer;
     return producer;
 }
