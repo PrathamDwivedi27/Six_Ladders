@@ -1,13 +1,8 @@
-import mongoose from 'mongoose';
-import { MONGODB_URI } from './server-config.js';
-import logger from '../utils/logger.js';
+import { PrismaClient } from "@prisma/client";
 
-export const connectDB = async () => {
-  try {
-    await mongoose.connect(MONGODB_URI);
-    logger.info('DB connected successfully');
+const prisma = new PrismaClient({
+    log: ["query","error"],
+});
 
-  } catch (error) {
-    logger.error('Something went wrong in connecting to DB', error);
-  }
-};
+
+export default prisma;

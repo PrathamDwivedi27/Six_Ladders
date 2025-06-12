@@ -1,8 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from './utils/logger.js';
-import { connectDB } from './config/db.js';
-
 import { PORT } from './config/server-config.js';
 
 const app = express();
@@ -10,8 +8,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-// Connect to the database
-connectDB();
 
 app.get('/', (req, res) => {
   res.send('Hello, World!');
