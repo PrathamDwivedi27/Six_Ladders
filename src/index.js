@@ -2,12 +2,14 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import logger from './utils/logger.js';
 import { PORT } from './config/server-config.js';
+import apiRoutes from './routes/index.js';
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+app.use('/api', apiRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello, World!');
