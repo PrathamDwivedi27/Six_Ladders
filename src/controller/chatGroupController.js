@@ -1,5 +1,4 @@
-import ChatGroupService from '../services/chatGroup.service.js';
-
+import ChatGroupService from "../service/chatGroupService.js";
 const chatGroupService = new ChatGroupService();
 
 const createChatGroup = async (req, res) => {
@@ -75,7 +74,7 @@ const deleteChatGroup = async (req, res) => {
 };
 
 
-export default{
+export {
     createChatGroup,
     getUserChatGroups,
     getChatGroup,

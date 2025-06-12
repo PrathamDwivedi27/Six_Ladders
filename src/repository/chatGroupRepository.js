@@ -1,6 +1,5 @@
-import prisma from '../config/db.config.js';
+import prisma from '../config/db.js';
 import logger from '../utils/logger.js';
-
 class ChatGroupRepository {
   async create(data) {
     try {
