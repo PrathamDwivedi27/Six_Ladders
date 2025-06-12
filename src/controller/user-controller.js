@@ -1,6 +1,7 @@
 import prisma from "../config/db.js";
 import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "../config/server-config.js";
+import logger from "../utils/logger.js";
 
 
 const login = async (req, res) => {
@@ -35,7 +36,7 @@ const login = async (req, res) => {
       },
     });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res
       .status(500)
       .json({ message: "Something went wrong. Please try again!" });
