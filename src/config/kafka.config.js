@@ -1,7 +1,9 @@
 import { Kafka} from "kafkajs";
 import fs from "fs";
 import path from "path";
-import { KAFKA_BROKER, KAFKA_USERNAME, KAFKA_PASSWORD } from "./server-config.js";
+import { KAFKA_BROKER} from "./server-config.js";
+import { KAFKA_USERNAME } from "./server-config.js";
+import { KAFKA_PASSWORD } from "./server-config.js";
 import logger from "../utils/logger.js";
 
 const kafka =new Kafka ({

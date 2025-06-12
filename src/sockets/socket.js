@@ -1,6 +1,7 @@
-import prisma from "./config/db.config.js";
-import { produceMessage } from "./config/kafka.config.js";
-import logger from "./utils/logger.js"; // ✅ Assuming you have a logger utility
+import prisma from "../config/db.js";
+import {produceMessage} from "../config/kafka.config.js";
+import logger from "../utils/logger.js";
+
 
 export function setupSocket(io) {
   // Middleware: validate and attach room ID

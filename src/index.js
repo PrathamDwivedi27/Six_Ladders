@@ -7,7 +7,7 @@ import { createServer } from 'http';
 import { Server } from 'socket.io';
 import { setupSocket } from './sockets/socket.js';
 import { createAdapter } from '@socket.io/redis-streams-adapter'; 
-import { pubClient, subClient } from './config/redis.config.js'; 
+import redis from './config/redis-config.js';
 import cors from 'cors';
 
 const app = express();
@@ -17,16 +17,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const server = createServer(app);
 
-await pubClient.connect();
-await subClient.connect();
-
-
 const io = new Server(server, {
   cors: {
     origin: '*'
   }
 });
-io.adapter(createAdapter(pubClient, subClient));
+io.adapter(createAdapter(redis));
 setupSocket(io);
 
 app.use('/api', apiRoutes);
