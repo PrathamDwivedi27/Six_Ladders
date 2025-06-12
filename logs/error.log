@@ -1,0 +1,19 @@
+2025-06-12T17:13:43.063Z [ERROR]: Error during server shutdown: pubClient is not defined
+2025-06-12T17:19:44.733Z [ERROR]: 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pratham Dwivedi",
+    email: "prathamd549@gmail.com",
+    oauth_id: "113109538093527776643",
+    provider: "google",
+    image: "https://lh3.googleusercontent.com/a/ACg8ocLgskutyqR9SLph3PUtGiOZiVrntu_qheiyBJZ5UiWNHsN0z8k=s96-c",
+    ~~~~~
+?   created_at?: DateTime,
+?   ChatGroup?: ChatGroupCreateNestedManyWithoutUserInput
+  }
+}
+
+Unknown argument `image`. Did you mean `name`? Available options are marked with ?.
+2025-06-12T17:46:12.607Z [ERROR]: Error during server shutdown: pubClient is not defined

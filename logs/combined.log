@@ -137,3 +137,103 @@
 2025-06-12T16:18:07.924Z [INFO]: Server is running on port 4000
 2025-06-12T16:18:28.631Z [INFO]: Server is running on port 4000
 2025-06-12T16:18:31.588Z [INFO]: Server is running on port 4000
+2025-06-12T16:18:33.418Z [INFO]: Server is running on port 4000
+2025-06-12T17:13:35.415Z [INFO]: Server is running on port 4000
+2025-06-12T17:13:43.060Z [INFO]: Shutting down server...
+2025-06-12T17:13:49.440Z [INFO]: Server is running on port 5000
+2025-06-12T17:19:44.733Z [ERROR]: 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pratham Dwivedi",
+    email: "prathamd549@gmail.com",
+    oauth_id: "113109538093527776643",
+    provider: "google",
+    image: "https://lh3.googleusercontent.com/a/ACg8ocLgskutyqR9SLph3PUtGiOZiVrntu_qheiyBJZ5UiWNHsN0z8k=s96-c",
+    ~~~~~
+?   created_at?: DateTime,
+?   ChatGroup?: ChatGroupCreateNestedManyWithoutUserInput
+  }
+}
+
+Unknown argument `image`. Did you mean `name`? Available options are marked with ?.
+2025-06-12T17:23:34.255Z [INFO]: Fetching chat groups for user 2
+2025-06-12T17:25:12.103Z [INFO]: Creating chat group for user 2
+2025-06-12T17:25:12.898Z [INFO]: Fetching chat groups for user 2
+2025-06-12T17:25:22.594Z [INFO]: Fetching chat group with id 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:22.952Z [INFO]: Controller: Getting users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:22.953Z [INFO]: Service: Fetching users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:22.954Z [INFO]: Finding users in group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:23.414Z [INFO]: Controller: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:23.416Z [INFO]: Service: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:23.417Z [INFO]: Finding chats for groupId: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:23.967Z [INFO]: Socket connected: KvxfX3sy_BcZLapYAAAB in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:24.363Z [INFO]: Socket connected: BPMCCPcY7RuA2u8AAAAD in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:35.211Z [INFO]: Controller: Adding user "Mr Fool" to group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:35.211Z [INFO]: Service: Adding user "Mr Fool" to group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:35.211Z [INFO]: Creating group user: {"name":"Mr Fool","group_id":"339638dc-acf7-4e87-ad60-ae09506584aa"}
+2025-06-12T17:25:39.692Z [INFO]: Fetching chat group with id 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:39.935Z [INFO]: Controller: Getting users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:39.936Z [INFO]: Service: Fetching users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:39.936Z [INFO]: Finding users in group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:40.196Z [INFO]: Controller: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:40.197Z [INFO]: Service: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:40.199Z [INFO]: Finding chats for groupId: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:40.485Z [INFO]: Socket disconnected: BPMCCPcY7RuA2u8AAAAD
+2025-06-12T17:25:40.742Z [INFO]: Socket connected: UqMyOOLIlEI2jxO7AAAF in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.186Z [INFO]: Fetching chat group with id 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.434Z [INFO]: Controller: Getting users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.435Z [INFO]: Service: Fetching users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.436Z [INFO]: Finding users in group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.680Z [INFO]: Controller: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.680Z [INFO]: Service: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:46.680Z [INFO]: Finding chats for groupId: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:47.283Z [INFO]: Socket connected: qobs0o0014MXKrhqAAAH in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:58.710Z [INFO]: Controller: Adding user "Audrey" to group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:58.711Z [INFO]: Service: Adding user "Audrey" to group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:25:58.712Z [INFO]: Creating group user: {"name":"Audrey","group_id":"339638dc-acf7-4e87-ad60-ae09506584aa"}
+2025-06-12T17:26:01.783Z [INFO]: Fetching chat group with id 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.017Z [INFO]: Controller: Getting users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.017Z [INFO]: Service: Fetching users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.018Z [INFO]: Finding users in group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.247Z [INFO]: Controller: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.248Z [INFO]: Service: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.248Z [INFO]: Finding chats for groupId: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:02.488Z [INFO]: Socket disconnected: qobs0o0014MXKrhqAAAH
+2025-06-12T17:26:02.652Z [INFO]: Socket connected: p5rbAmgzf--dZIYYAAAJ in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:26:18.631Z [INFO]: Producer is connected
+2025-06-12T17:26:19.653Z [INFO]: Message sent to Kafka:
+2025-06-12T17:26:30.470Z [INFO]: Message sent to Kafka:
+2025-06-12T17:39:49.287Z [INFO]: Socket disconnected: p5rbAmgzf--dZIYYAAAJ
+2025-06-12T17:39:49.310Z [INFO]: Socket disconnected: UqMyOOLIlEI2jxO7AAAF
+2025-06-12T17:39:53.178Z [INFO]: Socket connected: IZnFxO-zj2wOCqdyAAAM in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:39:53.181Z [INFO]: Socket connected: 3F7Tg_7uydDcWJ__AAAN in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:41:34.317Z [INFO]: Socket disconnected: IZnFxO-zj2wOCqdyAAAM
+2025-06-12T17:41:49.373Z [INFO]: Message sent to Kafka:
+2025-06-12T17:42:18.722Z [INFO]: Fetching chat group with id 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.011Z [INFO]: Controller: Getting users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.011Z [INFO]: Service: Fetching users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.012Z [INFO]: Finding users in group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.247Z [INFO]: Controller: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.248Z [INFO]: Service: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.249Z [INFO]: Finding chats for groupId: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:19.806Z [INFO]: Socket connected: iQFPAbqQ5wRMaxGvAAAP in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:34.109Z [INFO]: Controller: Adding user "Audrey" to group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:34.109Z [INFO]: Service: Adding user "Audrey" to group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:42:34.109Z [INFO]: Creating group user: {"name":"Audrey","group_id":"339638dc-acf7-4e87-ad60-ae09506584aa"}
+2025-06-12T17:42:57.825Z [INFO]: Message sent to Kafka:
+2025-06-12T17:43:10.880Z [INFO]: Message sent to Kafka:
+2025-06-12T17:43:13.612Z [INFO]: Fetching chat group with id 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:13.946Z [INFO]: Controller: Getting users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:13.947Z [INFO]: Service: Fetching users for group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:13.947Z [INFO]: Finding users in group ID: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:14.233Z [INFO]: Controller: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:14.234Z [INFO]: Service: Fetching chats for group ID 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:14.234Z [INFO]: Finding chats for groupId: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:14.538Z [INFO]: Socket disconnected: iQFPAbqQ5wRMaxGvAAAP
+2025-06-12T17:43:14.703Z [INFO]: Socket connected: Yw1OJnCxFd_4fQjbAAAR in room: 339638dc-acf7-4e87-ad60-ae09506584aa
+2025-06-12T17:43:25.744Z [INFO]: Message sent to Kafka:
+2025-06-12T17:43:28.983Z [INFO]: Socket disconnected: Yw1OJnCxFd_4fQjbAAAR
+2025-06-12T17:43:34.803Z [INFO]: Socket disconnected: 3F7Tg_7uydDcWJ__AAAN
+2025-06-12T17:46:12.597Z [INFO]: Shutting down server...
